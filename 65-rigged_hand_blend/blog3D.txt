@@ -1,0 +1,11 @@
+when i started working on the 3d model for representing hands in the website to show signs, initially i downloaded a rigged hand 3d model from web.
+but then i added my custom bones. and then learnt how to connect each bones, i.e. parenting them.
+now i am able to make poses with this hand in the blender pose mode. but i had to work my way to manipulate the model using scripting.
+initially am trying to do so using scripting default enabled in blender.
+trying to understand how bone location is adjusted. then tried to use something called Inverse Kinematics but it didn't work as expect, unaware of what's actually wrong with it.
+so now thinking to work on the directly moving hand using bones. but i need to understand behaviour of bone when it is given co-ordinates in parent attached and independent. in independent it shifts the location of bone to the lower end of bone.
+we cant move the child bone without moving parent bone.
+so i took a new approach by just making angles between bones.
+in this we need to find angels between points found in the media pipe output, then input those angles to here for the respective bones in model.
+worked on the python code with mediapipe model such that it can take image input and convert img into landmarks points
+then need to make work on getting angles from it

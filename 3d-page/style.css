@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+video {
+  display: none;
+}
+
+canvas {
+  display: block;
+}
